@@ -4,39 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI Poem Generator</h1>
-    </header>
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Please enter a poem topic"
-          required
-          autofocus
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        Roses are red and violets are blue <br />
-        Sugar is sweet and so are you
-        <br />
-        <br />
-      </div>
-    </main>
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/maggiew254" target="_blank">Maggie Gatero</a>,
-      is open-sourced on
-      <a href="https://github.com/maggiew254/AI-Poem-Generator" target="_blank"
-        >Github</a
-      >
-      and hosted on
-      <a href="https://my-ai-poems.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+    <div class="container">
+      <header>
+        <h1>AI Poem Generator</h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Please enter a poem topic"
+            required
+            autofocus
+            autocomplete="off"
+            class="input-suggestion"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div>
+          Roses are red and violets are blue <br />
+          Sugar is sweet and so are you
+          <br />
+          <br />
+        </div>
+      </main>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/maggiew254" target="_blank">Maggie Gatero</a
+        >, is open-sourced on
+        <a
+          href="https://github.com/maggiew254/AI-Poem-Generator"
+          target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a href="https://my-ai-poems.netlify.app/" target="_blank">Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
