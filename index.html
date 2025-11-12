@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
         <h1>AI Poem Generator</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-form">
           <input
             type="text"
             placeholder="Please enter a poem topic"
@@ -29,9 +30,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          Roses are red and violets are blue <br />
-          Sugar is sweet and so are you
+        <div class="poem" id="poem">
           <br />
           <br />
         </div>
@@ -49,5 +48,6 @@
         <a href="https://my-ai-poems.netlify.app/" target="_blank">Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
