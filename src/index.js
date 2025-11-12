@@ -1,7 +1,8 @@
 function displayPoem(event) {
   event.preventDefault();
   new Typewriter("#poem", {
-    strings: "This is the poem you are looking for",
+    strings:
+      "This is the poem you are looking for. Roses are red, violets are blue. Sugar is sweet and so are you",
     autoStart: true,
     delay: 1,
     cursor: "",
