@@ -8,9 +8,11 @@ function displayPoem(response) {
 }
 function getPoem(event) {
   event.preventDefault();
-  let message = document.querySelector("#poem");
-  message.innerHTML = "Generating poem...";
   let userInput = document.querySelector(".input-suggestion");
+  let message = document.querySelector("#poem");
+  message.classList.remove("hidden");
+  message.innerHTML = `Generating a poem about ${userInput.value} <span class= "blink"> ....<span>`;
+
   let apiKey = "24a6f34aet30b286677e3ofdb3c4aea0";
   let prompt = `Please use ${userInput.value} as a subject to generate a short poem.`;
   let context =
